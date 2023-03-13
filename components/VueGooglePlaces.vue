@@ -14,7 +14,6 @@
         </button>
       </div>
 
-      <!-- Таби -->
       <div class="tabs">
         <div class="tabs__header">
           <div
@@ -33,7 +32,6 @@
           </div>
         </div>
         <div class="tabs__content">
-          <!-- Перший таб зі списком блоків погоди -->
           <div v-show="activeTab === 'weatherList'" class="weather__list">
             <li
               class="weather__card"
@@ -66,14 +64,12 @@
             </li>
           </div>
 
-          <!-- Другий таб зі списком улюблених блоків -->
           <div v-show="activeTab === 'favoriteBlocks'" class="favorite-blocks">
             <FavoriteBlocks :added-blocks="addedBlocks" />
           </div>
         </div>
       </div>
 
-      <!-- Модальне вікно -->
       <ModalForManyBlock
         class="weather__modal"
         v-if="isModalVisible"
