@@ -24,7 +24,7 @@ export default {
 </script>
 <style lang="scss">
 .modal {
-  position: relative;
+  position: absolute;
   background: linear-gradient(
     180deg,
     #d6eef3 100%,
